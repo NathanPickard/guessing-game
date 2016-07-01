@@ -19,8 +19,20 @@
       <p>Complete the Code Fellows 201 course and move on to Code 301</p>
 
     <script type ="text/javascript">
-    var username = prompt("Please tell me your name:", "Enter here");
-    alert("Hello " + username + "!  Welcome to my website.  Enjoy!");
+    var userName = prompt("Please tell me your name:", "Enter here");
+    alert("Hello " + userName + "!  Welcome to my website.  Enjoy!");
+    console.log("User Name: " + userName);
+    console.log("Get a guess from the user.");
+    var guess1 = prompt("Did I live in Tennessee for 15 years?", "");
+    if (guess1 == "yes") {
+      alert("That is correct!");
+    } else {
+      alert("Incorrect, I actually lived south of Nashville for 15 years!")
+    }
+
+
+
+
     </script>
 
     </body>
