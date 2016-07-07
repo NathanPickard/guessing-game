@@ -11,7 +11,7 @@ while (guess1 == "Y" || guess1 == "y" || guess1 == "YES" || guess1 == "N" || gue
   var guess1 = prompt("Did I live in Tennessee for 15 years?", "");
 }
 if (guess1.toLowerCase() == "yes") {
-  alert("That is correct!");
+  alert("That is correct! Way to go!");
   var correctAnswers = 1;
 }
  else {
