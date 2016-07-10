@@ -1,9 +1,32 @@
-var userName = prompt("Please tell me your name:", "Enter here");
+function guessNumber(guess) {
+  var guess4 = prompt("Guess my favorite number from 1 to 10!");
+  while (guess4 != 8) {
+    if (guess4 < 8) {
+      alert("Your guess is too low, guess again!");
+
+    } else {
+      alert("Your guess is too high, guess again!");
+    }
+    var guess4 = prompt("Guess my favorite number from 1 to 10!");
+  }
+  if (guess4 == 8){
+    alert("You are correct! Way to go!");
+    correctAnswers++;
+  }
+}
+
+function getUserName() {
+  var userName = "";
+  while((userName.trim() == "") && (userName != null)) {
+    var userName = prompt("Please tell me your name:", "Enter here");
+  }
+}
+
+
+getUserName();
 alert("Hello " + userName + "!  Welcome to my website.  Enjoy!");
 console.log("User Name: " + userName);
 console.log("Get a guess from the user.");
-
-
 
 var guess1 = prompt("Did I live in Tennessee for 15 years?", "");
 while (guess1 == "Y" || guess1 == "y" || guess1 == "YES" || guess1 == "N" || guess1 == "n" || guess1 == "NO") {
@@ -49,20 +72,7 @@ if (guess3.toLowerCase() == "yes") {
 console.log(userName + " guessed: " + guess3 + " for question 3");
 
 
-var guess4 = prompt("Guess my favorite number from 1 to 10!");
-while (guess4 != 8) {
-  if (guess4 < 8) {
-    alert("Your guess is too low, guess again!");
 
-  } else {
-    alert("Your guess is too high, guess again!");
-  }
-  var guess4 = prompt("Guess my favorite number from 1 to 10!");
-}
-if (guess4 == 8){
-  alert("You are correct! Way to go!");
-  correctAnswers++;
-}
 
 
 alert("You answered " + correctAnswers + " questions out of 4 correct, " + userName + "!");
