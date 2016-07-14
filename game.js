@@ -5,10 +5,11 @@ alert("Hello " + userName + "!  Welcome to my website.  Enjoy!");
 
 var guess1 = prompt("Did I live in Tennessee for 15 years?", "");
 getUserInput(guess1);
-
 var showAnswer1 = document.getElementById("answer1");
+var showPicture1 = document.getElementById("image1");
 if (guess1.toLowerCase() == "yes") {
   showAnswer1.innerHTML =  guess1 + " is correct!";
+  showPicture1.innerHTML = '<img src= "nashville-skyline.jpg"/>';
   var correctAnswers = 1;
 } else {
   showAnswer1.innerHTML = "Incorrect, I actually lived south of Nashville for 15 years!";
@@ -18,10 +19,12 @@ if (guess1.toLowerCase() == "yes") {
 var guess2 = prompt("Are anchovies my favorite pizza topping?");
 getUserInput(guess2);
 var showAnswer2 = document.getElementById("answer2");
+var showPicture2 = document.getElementById("image2");
 if (guess2.toLowerCase() == "yes") {
   showAnswer2.innerHTML = "Nope! Not quite, I do enjoy anchovies on my pizza though!";
 } else {
   showAnswer2.innerHTML = guess2 + " is the correct answer!  My favorite pizza topping is bacon!";
+  showPicture2.innerHTML = '<img src="CIMG2912.jpg"/>';
   correctAnswers++;
 }
 
