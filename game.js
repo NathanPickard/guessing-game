@@ -73,7 +73,6 @@ function guessNumber(guess) {
     var guess4 = prompt("Guess my favorite number from 1 to 10!");
   }
   if (guess4 == 8){
-    //alert("You are correct! Way to go!");
     var showAnswer4 = document.getElementById("answer4");
     showAnswer4.innerHTML = guess4 + " is correct, way to go!"
     correctAnswers++;
