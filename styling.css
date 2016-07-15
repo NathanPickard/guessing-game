@@ -1,9 +1,27 @@
+body {
+  background-color: LightGray;
+}
 h1 {
   color: blue;
-  font-family Optima, Helvetica, sans-serif;
+  font-family: Verdana, Optima, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  color: DarkBlue;
+  font-family: serif;
 }
 
 body {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
+}
+
+h3.name {
+  text-align: center;
+  color: DarkBlue;
+}
+
+div {
+  text-align: center;
 }

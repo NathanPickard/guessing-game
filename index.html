@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <style>
+      .correctAnswerColor {color: green; font-style: oblique;}
+      .incorrectAnswerColor {color: red; font-style: oblique;}
+      </style>
       <title>
         Nathan's 201 page
       </title>
       <link rel="stylesheet" href="styling.css" type="text/css">
     </head>
     <body>
-    <h1>Guessing Game</h1>
-      <p>Hi, I'm Nathan Pickard</p>
-    <h4>Biography</h5>
-      <p>I'm a self-taught coder, learning programming for about 2 years</p>
-    <h4>List of Experience</h5>
-      <p>Completed tracks in Treehouse for Android Development and Java.
-        Published 4 apps to the Google Play store.</p>
-    <h4>List of Education</h5>
-      <p>Some computer science education from Middle Tennessee State University</p>
-    <h4>List of Goals</h5>
-      <p>Complete the Code Fellows 201 course and move on to Code 301</p>
+      <h3 class="name">Hi, I'm Nathan Pickard</h3>
+      <h4>Biography</h5>
+      <ul>
+        <li>I'm a self-taught coder, learning programming for about 2 years</li>
+      </ul>
+      <h4>List of Experience</h5>
+      <ul>
+        <li>Completed tracks in Treehouse for Android Development and Java.</li>
+        <li>Published 4 apps to the Google Play store.</li>
+      </ul>
+      <h4>List of Education</h5>
+      <ul>
+        <li>Some computer science education from Middle Tennessee State University</li>
+      </ul>
+      <h4>List of Goals</h5>
+        <ul>
+          <li>Complete the Code Fellows 201 course and move on to Code 301</li>
+          <li>Continue developing Android apps</li>
+        </ul>
 
+  <div>
     <p>Question 1: Did I live in Tennessee for 15 years?</p>
     <p id="answer1"></p>
     <img id="image1"></img>
@@ -28,9 +41,11 @@
     <p>Question 3: Have I ever hiked to the summit of Middle Sister?</p>
     <p id="answer3"></p>
     <img id="image3"></img>
-    <p>Guess my favorite number from 1 to 10!</p>
+    <p>Question 4: Can you guess my favorite number from 1 to 10?</p>
     <p id="answer4"></p>
     <h3 id="correctAnswers"></h3>
+  </div>
+
 
 
     <script type ="text/javascript" src="game.js"></script>
